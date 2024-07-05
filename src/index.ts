@@ -23,6 +23,7 @@ async function runChromeExtension(){
 
 
 async function main(){
+    // run the setIInterval for a time suitable for the build
     setInterval(runChromeExtension, 1000*60);
 }
 
