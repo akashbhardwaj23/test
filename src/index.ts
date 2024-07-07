@@ -3,6 +3,7 @@ import {exec} from 'child_process'
 
 
 async function runChromeExtension(){
+    // create a Promise
    return new Promise((resolve) => {
     console.log('Chrome Extension build Running Started At ', new Date().toLocaleString());
     const execBuild =  exec(`cd ${path.join(__dirname, '../../chrome-extension')} && npm run build`)
